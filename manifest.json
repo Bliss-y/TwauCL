@@ -1,0 +1,18 @@
+{
+  "manifest_version": 3,
+  "name": "twauCL",
+  "description": "Twitch auto claim bonus point for poor people ;(",
+  "version": "1.0",
+  "action": {
+    "default_popup": "index.html" 
+  },
+  "content_scripts": [
+    {
+      "js": ["scripts/content.js"],
+      "matches": [
+        "https://www.twitch.tv/*"
+      ]
+    }
+  ]
+ 
+}
